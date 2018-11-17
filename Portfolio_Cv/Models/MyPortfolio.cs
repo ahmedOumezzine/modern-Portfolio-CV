@@ -8,19 +8,52 @@ namespace Portfolio_Cv.Models
     public class Header
     {
     }
-    public class _AboutMe
+    public class AboutMe
     {
     }
-    public class _MySkils
+    public class cv_education
     {
+        public string school { get; set; }
+        public string start { get; set; }
+        public string end { get; set; }
+        public string degree { get; set; }
     }
-    public class _MyCertification
+
+    public class cv_experience
     {
+        public string title { get; set; }
+        public string institution { get; set; }
+        public string organization { get; set; }
+        public string start { get; set; }
+        public string end { get; set; }
+        public string description { get; set; }
     }
-    public class _MyWorks
+
+    public class MySkils
     {
+        public string title { get; set; }
     }
-    public class _ContactMe
+    public class MyCertification
     {
+        public string name { get; set; }
+        public string description { get; set; }
+        public string year { get; set; }
+        public string image { get; set; }
+    }
+    public class MyWorks
+    {
+        public string name { get; set; }
+        public string description { get; set; }
+        public string year { get; set; }
+        public string Categories { get; set; }
+        public string tags { get; set; }
+    }
+    public class ContactMe
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Message { get; set; }
+
     }
 }
