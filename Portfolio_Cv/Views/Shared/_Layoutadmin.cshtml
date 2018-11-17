@@ -1,0 +1,112 @@
+﻿<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page title -->
+    <title>Admin</title>
+
+    <link href="~/Content/admin/metisMenu.css" rel="stylesheet" />
+    <link href="~/Content/admin/animate.css" rel="stylesheet" />
+    <link href="~/Content/admin/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/admin/style.css" rel="stylesheet" />
+</head>
+<body class="fixed-navbar sidebar-scroll">
+
+    <!-- Simple splash screen-->
+    <div class="splash" style="display: none;"> <div class="color-line"></div>
+    <div class="splash-title"><h1>Homer - Responsive Admin Theme</h1><p>Special Admin Theme for small and medium webapp with very clean and aesthetic style and feel. </p>
+        <div class="spinner">
+        <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> </div> </div>
+    <!--[if lt IE 7]>
+    <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header -->
+    <div id="header">
+        <div class="color-line">
+        </div>
+        <div id="logo" class="light-version">
+            <span>
+                Admin
+            </span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <aside id="menu">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+            <div id="navigation" style="overflow: hidden; width: auto; height: 100%;">
+
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="@Url.Action("Index","Manage")"> 
+                            <span class="nav-label">Dashboard</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Educations","Manage")"> 
+                            <span class="nav-label">
+                                My Educations
+                            </span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Skills","Manage")">
+                            <span class="nav-label">
+                                My Skills
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Certifs","Manage")">
+                            <span class="nav-label">
+                                My Certifs
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Works","Manage")">
+                            <span class="nav-label">
+                                My Works
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Contactus","Manage")">
+                            <span class="nav-label">
+                                Contact us
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 0px; position: absolute; top: 0px; opacity: 0.3; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 346px;"></div><div class="slimScrollRail" style="width: 0px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+
+        <div class="content">
+            @RenderBody()
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <span class="pull-right">
+                Example text
+            </span>
+            Company 2015-2020
+        </footer>
+    </div>
+
+    <!-- Vendor scripts -->
+    <script src="~/Content/admin/jquery.min.js"></script>
+    <script src="~/Content/admin/jquery-ui.min.js"></script>
+    <script src="~/Content/admin/jquery.slimscroll.min.js"></script>
+    <script src="~/Content/admin/bootstrap.min.js"></script>
+    <script src="~/Content/admin/metisMenu.min.js"></script>
+</body>
+</html>

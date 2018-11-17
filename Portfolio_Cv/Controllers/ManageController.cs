@@ -322,6 +322,30 @@ namespace Portfolio_Cv.Controllers
             return result.Succeeded ? RedirectToAction("ManageLogins") : RedirectToAction("ManageLogins", new { Message = ManageMessageId.Error });
         }
 
+
+        public ActionResult Educations()
+        {
+            return View();
+        }
+
+        public ActionResult Skills()
+        {
+            return View();
+        }
+
+    public ActionResult Certifs()
+        {
+            return View();
+        }    public ActionResult Works()
+        {
+            return View();
+        }
+           public ActionResult Contactus()
+        {
+            return View();
+        }
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && _userManager != null)

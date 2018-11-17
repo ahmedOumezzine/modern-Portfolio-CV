@@ -187,6 +187,15 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\admin\animate.css" />
+    <Content Include="Content\admin\bootstrap.css" />
+    <Content Include="Content\admin\bootstrap.min.js" />
+    <Content Include="Content\admin\jquery-ui.min.js" />
+    <Content Include="Content\admin\jquery.min.js" />
+    <Content Include="Content\admin\jquery.slimscroll.min.js" />
+    <Content Include="Content\admin\metisMenu.css" />
+    <Content Include="Content\admin\metisMenu.min.js" />
+    <Content Include="Content\admin\style.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -296,6 +305,12 @@
     <Content Include="Views\Home\_MyWorks.cshtml" />
     <Content Include="Views\Home\_ContactMe.cshtml" />
     <Content Include="Views\Home\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Layoutadmin.cshtml" />
+    <Content Include="Views\Manage\Educations.cshtml" />
+    <Content Include="Views\Manage\Skills.cshtml" />
+    <Content Include="Views\Manage\Certifs.cshtml" />
+    <Content Include="Views\Manage\Works.cshtml" />
+    <Content Include="Views\Manage\Contactus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

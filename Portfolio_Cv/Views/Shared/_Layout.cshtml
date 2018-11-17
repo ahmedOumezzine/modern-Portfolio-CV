@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,19 +59,20 @@
 </head>
 <body>
 
-<header class="entry-header">
-    <h2 class="entry-title">Welcome to my personal portfolio website <span>wwww.ahmedoumezzine.com</span></h2>
-</header>
-<div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
-<div id="content">
-    @RenderBody()
-</div>
+    <header class="entry-header">
+        <h2 class="entry-title">Welcome to my personal portfolio website <span>wwww.ahmedoumezzine.com</span></h2>
+    </header>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div id="content">
+        @RenderBody()
+    </div>
     <!-- Scripts start from here -->
     <script src="~/Content\js\plugins.js"></script>
-    <script src="~/Content\js\plugins-activate.js"></script>  
+    <script src="~/Content\js\plugins-activate.js"></script>
+    @RenderSection("scripts", required: false)
 </body>
 </html>
