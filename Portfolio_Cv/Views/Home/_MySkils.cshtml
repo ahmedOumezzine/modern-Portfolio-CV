@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewBag.Title = "_MySkils";
+}
+<style>
+    #myCanvasContainer {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<script src="https://jacekjeznach.com/wp-content/themes/jj/js/vendor/tagcanvas.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        try {
+            TagCanvas.Start('myCanvas', 'tags', {
+                textColour: '#ff0000',
+                outlineColour: '#ff00ff',
+                reverse: true,
+                depth: 0.8,
+                maxSpeed: 0.05
+            });
+        } catch (e) {
+            // something went wrong, hide the canvas container
+            document.getElementById('myCanvasContainer').style.display = 'none';
+        }
+    };
+</script>
+
+
+<div id="MySkilsWrapper" class="">
+    <div class="container-fluid">
+        <div class="row skils-welcome-row">
+            <div id="MySkilsScreen" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 data-scrollreveal="enter from the top after 0.5s">
+                    <span>My</span> Skills
+                </h2>
+                <h3 class="" data-scrollreveal="enter from the right after 1.0s">
+                    Extensive knowledge of current web standards,
+                    <br>HTML5 and CSS3, Jquery along with developing front end with
+                    <strong>Responsive Coding and Cross Browser Compatibility</strong>.
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div id="MySkils" class="row">
+        <div class="col-md-6">
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+                <div class="skills">
+                    <ul>
+                        <li class="html">Programming Languages</li>
+                        <li class="photoshop">C#</li>
+                        <li class="css">PHP</li>
+                        <li class="jq">JavaScript</li>
+                        <li class="twitter-boostrap">HTML,CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+                <div class="skills">
+                    <ul>
+                        <li class="html">Programming Web Languages</li>
+                        <li class="photoshop">ASP.NET MVC</li>
+                        <li class="css">Silex, Symfony</li>
+                        <li class="jq">React js</li>
+                        <li class="twitter-boostrap">Boostrap</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+                <div class="skills">
+                    <ul>
+                        <li class="html">Programming Mobile Languages</li>
+                        <li class="photoshop">Xamarin</li>
+                        <li class="jq">React Native</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+                <div class="skills">
+                    <ul>
+                        <li class="html">Databases</li>
+                        <li class="photoshop">MS SQL Server</li>
+                        <li class="css">Mysql</li>
+                        <li class="jq">XML</li>
+                        <li class="twitter-boostrap">Excel</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+                <div class="skills">
+                    <ul>
+                        <li class="html">Tools and Utilities</li>
+                        <li class="photoshop">Visual Studio</li>
+                        <li class="css">IIS</li>
+                        <li class="jq">Wamp & XAMP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+                <div class="skills">
+                    <ul>
+                        <li class="html">Designing Software</li>
+                        <li class="photoshop">Photoshop</li>
+                        <li class="css">Ilustrator</li>
+                        <li class="jq">After effect</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="MySkils" class="row">
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+            </div>
+            <div class="col-xs-4" data-scrollreveal="enter from the left after 1.5s">
+
+                <div id="myCanvasContainer">
+                    <canvas width="600" height="600" id="myCanvas">
+                        <p>Anything in here will be replaced on browsers that support the canvas element</p>
+                    </canvas>
+                </div>
+                <div id="tags">
+                    <ul>
+                        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+                        <li><a href="">Microsoft</a></li>
+                        <li><a href="">Surfave Pro</a></li>
+                        <li><a href="">Photoshop</a></li>
+                        <li><a href="">C#</a></li>
+                        <li><a href=""> ASP MVC</a></li>
+                        <li><a href="">React JS</a></li>
+                        <li><a href="">Javascript</a></li>
+                        <li><a href="">Ilustrator</a></li>
+                        <li><a href="">HTML5</a></li>
+                        <li><a href="">CSS3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="skils-down-row">
+                    I have basic CMS work experience in Drupal, Joomla, Wordpress, CSS framework SASS, Adobe Illustrator, Flash.
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="button" href="#MyWorksScreen"></a>
+    <div class="page-bottom-design">&nbsp;</div>
+</div>

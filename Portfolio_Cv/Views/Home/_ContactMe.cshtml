@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "_ContactMe";
+}
+<div id="ContactmeWrapper">
+    <div class="container-fluid">
+        <div class="row contact-welcome-row">
+            <div id="ContactmeScreen" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2 data-scrollreveal="enter from the top after 0.5s">
+                    <span>Thanks</span>
+                </h2>
+                <h3 data-scrollreveal="enter from the top after 1.0s">
+                    Thanks for spending your valuable time ( <span id="minutes">06</span> minutes and <span id="seconds">03</span> seconds) with me :) <br> Please feel free to drop me a mail.
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div id="ContactmeInner" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-lg-offset-1">
+                <div class="contact-lhs-box" data-scrollreveal="enter from the top after 2.0s">
+                    <h3>Feedback</h3>
+                    <p>
+                        Please feel free to provide your feedback: <a href="mailto:bijuchelembra@gmail.com">ahmedoumezzine@outlook.fr</a>
+                    </p>
+                    <div class="social-links">
+                        <ul>
+                            <li data-scrollreveal="enter from the left after 2.7s">
+                                <a target="_blank" href="https://www.facebook.com/Aoumezzine" class="facebook">Facebook</a>
+                            </li>
+                            <li data-scrollreveal="enter from the left after 3.0s">
+                                <a target="blank" href="https://www.linkedin.com/in/ahmedoumezzine/" class="linkedin">Linkdin</a>
+                            </li>
+                            <li data-scrollreveal="enter from the left after 3.3s">
+                                <a target="_blank" href="https://twitter.com/AOumezzine" class="twitter">Twitter</a>
+                            </li>
+                            <li data-scrollreveal="enter from the left after 3.3s">
+                                <a href="callTo://fbi.makch5a" class="email">.Net Developer, Skype</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 offset-lg-3 col-lg-6 col-lg-offset-1">
+                <form action="#" method="post" name="contact-form" id="contact-form">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-scrollreveal="enter from the left after 1.3s">
+                            <input name="full-name" id="full-name" type="text" class="form-control required" placeholder="Name">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-scrollreveal="enter from the left after 1.6s">
+                            <input name="email" id="email" type="text" class="form-control required email" placeholder="Email">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-scrollreveal="enter from the left after 1.9s">
+                            <input name="phone" id="phone" type="text" class="form-control required txt-box" onblur="if (this.value == '') this.value = 'Phone';" onfocus="if (this.value == 'Phone') this.value = '';" value="Phone">
+                        </div>
+                    </div>
+                    <div class="row contact-textarea-box">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-scrollreveal="enter from the left after 2.2s">
+                            <textarea class="form-control required" onblur="if (this.value == '') this.value = 'Message';" onfocus="if (this.value == 'Message') this.value = '';" id="message" name="message">Message</textarea>
+                        </div>
+                    </div>
+                    <div class="row contact-button-box">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" data-scrollreveal="enter from the top after 2.5s">
+                            <input id="submitquery" class="form-control submit-cta" type="submit" value="Send message">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

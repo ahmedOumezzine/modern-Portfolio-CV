@@ -1,0 +1,78 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ahmed Oumezzine - .NET Software Engineer</title>
+    <link rel="shortcut icon" href="~/Content/images\ficon.png" type="image/vnd.microsoft.icon">
+    <meta property="og:title" content="Ahmed Oumezzine - .NET Software Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ahmedoumezzine.com/">
+    <meta property="og:image" content="http://1.bp.blogspot.com/-rP_gDlHMn-8/WpvaF9zU2NI/AAAAAAAABp0/_QQr1gIxmjoUrqgP26ezy2-bY69XX4fzACK4BGAYYCw/s1600/logo_c2.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="282">
+    <meta property="og:image:height" content="361">
+    <meta name="Description" content="My name is Ahmed Oumezzine. I am a software engineer, Web developer and designer based in Monastir , Tunisia. I am passionate about creating new ideas and to be unique. ">
+    <meta name="Keywords" content="ui ux designer, html, html5 css3 jquery, ui developer skype, deresponsive, html5 css3, Web site designing India, web, training, web development training, php, Angularjs developer, freelance web designers india, logo designing kerala, ui developer portfolio, website redesign">
+    <meta http-equiv="bulletin-text" content="Web Designing, UX/UI and Web development services &amp; Web Solutions">
+    <meta name="author" content="Bijeesh (Biju)">
+    <meta name="robots" content="index,follow">
+    <meta name="GOOGLEBOT" content="index,follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="revisit-after" content="14 days">
+    <meta http-equiv="expires" content="Never">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $('body').addClass('loaded');
+            }, 300);
+
+            document.getElementsByTagName("body")[0].style.cursor = "url('images/brush.png'), auto";
+
+            $("#MainWrapper").fadeIn(300);
+
+            //Web Font
+            WebFontConfig = {
+                google: { families: ['Dancing+Script:400,700:latin', 'Lato:400,700,900,300,300italic,100:latin', 'Roboto+Slab:400,100,300,700:latin'] }
+            };
+            (function () {
+                var wf = document.createElement('script');
+                wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+
+        });
+    </script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content\css\styles.min.css">
+    <link rel="stylesheet" href="~/Content\css\custom-responsive-style.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header class="entry-header">
+    <h2 class="entry-title">Welcome to my personal portfolio website <span>wwww.ahmedoumezzine.com</span></h2>
+</header>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
+<div id="content">
+    @RenderBody()
+</div>
+    <!-- Scripts start from here -->
+    <script src="~/Content\js\plugins.js"></script>
+    <script src="~/Content\js\plugins-activate.js"></script>  
+</body>
+</html>
